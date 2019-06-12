@@ -20,11 +20,35 @@
  */
 public class You{
 
-	private String firstName;
-	private String lastName;
-	private String favoriteAnimal;
-	private int age;
+	private String firstName = "Michelle";
+	private String lastName = "Hon";
+	private String favoriteAnimal = "bunny";
+	private int age = 15;
 
 	// Write your code here
+	public You(String firstName, String lastName, String favoriteAnimal, int age)
+	{
+		firstName = this.firstName;
+		lastName = this.lastName;
+		favoriteAnimal = this.favoriteAnimal;
+		age = this.age;	
+	}
 	
+	public String getFullName()
+	{
+		return firstName + lastName;
+	}
+	
+	public String setFavoriteAnimal(String animal)
+	{
+		favoriteAnimal = animal;
+		return favoriteAnimal;
+	}
+	
+	public int happyBirthday()
+	{
+		System.out.println("H A P P Y  B I R T H D A Y!");
+		return age++;
+	}
+
 }
